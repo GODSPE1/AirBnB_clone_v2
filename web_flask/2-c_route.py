@@ -18,10 +18,10 @@ def hbnb():
     """Displays HBNB"""
     return "HBNB"
 
-@app.route("/c/<test>", strict_slashes=False)
-def c(test):
+@app.route("/c/<text>", strict_slashes=False)
+def c(text):
     """Displays C followed by the value of the text variable"""
-    return f"C {test}"
+    return f"C {text}"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
