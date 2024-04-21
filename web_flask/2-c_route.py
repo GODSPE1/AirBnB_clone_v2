@@ -20,8 +20,7 @@ def hbnb():
 
 @app.route("/c/<test>", strict_slashes=False)
 def c(test):
-    """Displays C followed by the value of the text variable
-    (replace underscore _ symbols with a space) """
+    """Displays C followed by the value of the text variable"""
     return f"C {test}"
 
 if __name__ == "__main__":
