@@ -2,7 +2,6 @@
 """
 This script starts a Flask web application
 The application listens on 0.0.0.0, port 5000
-Add hbnb route
 """
 
 from flask import Flask
