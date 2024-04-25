@@ -14,10 +14,11 @@ app = Flask(__name__)
 
 @app.route("/state_list", strict_slashes=False)
 def strict_list():
-    """Display a HTML page inside the tag BODY with the list 
+    """Display a HTML page inside the tag BODY with the list
     of all State objects present in DBStorage sorted by name
     """
     return render_templates("7-states_list.html", states=states)
+
 
 @app.teardown_appcontext
 def teardown(exc):
@@ -27,4 +28,3 @@ def teardown(exc):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
-
